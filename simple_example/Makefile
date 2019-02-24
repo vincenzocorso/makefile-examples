@@ -5,7 +5,7 @@ INCLUDE_DIR		:=	include
 OUTPUT			:=	main
 
 # Makefile setup
-CFLAGS			:=	-Wall
+CFLAGS			:=	-Wall -std=c11
 INCLUDE			:=	-I $(INCLUDE_DIR)
 SRCS			:=	$(wildcard $(SRC_DIR)/*.c)
 OBJS			:=	$(patsubst $(SRC_DIR)/%.c, $(BUILD_DIR)/%.o, $(SRCS))

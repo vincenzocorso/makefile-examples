@@ -7,7 +7,7 @@ TEST_DIR		:=	test
 OUTPUT			:=	library.a
 
 # Makefile setup
-CFLAGS			:=	-Wall
+CFLAGS			:=	-Wall -std=c11
 INC_PATH		:=	-I $(INCLUDE_DIR)
 LIBS_PATH		:=	-L $(BUILD_DIR)
 LIBS			:=	-l:$(OUTPUT)
