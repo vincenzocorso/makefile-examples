@@ -1,2 +1,2 @@
 # Makefile example
-Some makefile example for c projects.
+Some makefile examples for c projects.
