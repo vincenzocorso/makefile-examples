@@ -33,7 +33,7 @@ setup:
 
 test:
 	@echo "Testing..."
-	$(foreach file, $(TESTS), \
+	@$(foreach file, $(TESTS), \
 	$(CC) $(CFLAGS) $(INC_PATH) $(LIBS_PATH) $(file) $(LIBS) -o $(basename $(file)); \
 	./$(basename $(file)) )
 
@@ -43,5 +43,5 @@ clean:
 
 leaks:
 	@echo "Checking memory leaks..."
-	$(foreach file, $(TESTS), \
+	@$(foreach file, $(TESTS), \
 	valgrind --leak-check=yes ./$(basename $(file)); )
